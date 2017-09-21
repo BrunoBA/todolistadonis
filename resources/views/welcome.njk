@@ -1,0 +1,41 @@
+{% extends 'master' %}
+
+{% block content %}
+  <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th style="text-align: center;" >Conclusão</th>
+                        <th>Atividade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="concat">
+                                            <tr id="tr-58">
+                            <td style="text-align: center;">
+                                <input id="58" class="doActivity" type="checkbox" checked=&quot;checked&quot; >
+                            </td>
+                            <td >
+                                <span id="span-58" class="spans">
+                                123   
+                                </span>
+                                
+                                <div class="div-input" id="text-span-58" style="display: none;">
+                                    <input id="text-58" class="input-name" type="text" value="123">
+                                    <button class="btn btn-lg btn-primary btn-sm change" >Salvar</button>
+                                </div>
+                            </td>
+                            <td>
+                                <button id="58" class="btn btn-lg btn-danger btn-sm rmActivity" >Remover</button>
+                            </td>
+                        </tr>
+                                    </tbody>
+                <tfoot>
+                    <tr> 
+                        <td colspan="3">
+                        <h4>Progresso:
+                        <span id="concluded">1</span>/<span id="total">1</span>
+                        </h4>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>{% endblock %}

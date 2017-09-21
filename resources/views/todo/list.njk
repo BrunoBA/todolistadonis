@@ -1,0 +1,37 @@
+{% extends 'todo.layout' %}
+
+{% block content %}
+     <div class="table-responsive">
+        <div id="list">
+            <div class="col-md-6">
+                <input type="text" id="addActivity" class="form-control" placeholder="O precisa ser feito?">
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-lg btn-success addActivity btn-sm form-control" >Adicionar</button>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th style="text-align: center;" >Conclusão</th>
+                        <th>Atividade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="concat">
+                    {% for item in items %}
+                       teste
+                    {% endfor %}
+                </tbody>
+                <tfoot>
+                    <tr> 
+                        <td colspan="3">
+                        <h4>Progresso:
+                        <span id="concluded">{{ $data['done'] }}</span>/<span id="total">{{ $data['quantity'] }}</span>
+                        </h4>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+{% endblock %}
